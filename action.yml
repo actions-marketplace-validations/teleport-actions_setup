@@ -6,8 +6,11 @@ inputs:
         description: Specify whether to use the enterprise binaries.
         required: false
         default: "false"
+    proxy:
+        description: Specify the address of your Teleport Proxy, required if version is set to "auto".
+        required: false
     version:
-        description: Specify the Teleport version without the preceding "v"
+        description: Specify the Teleport version without the preceding "v" or specify "auto" to use the version indicated by your Teleport cluster.
         required: true
 runs:
     using: node20
