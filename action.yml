@@ -13,7 +13,7 @@ inputs:
         description: Specify the Teleport version without the preceding "v" or specify "auto" to use the version indicated by your Teleport cluster.
         required: true
 runs:
-    using: node20
+    using: node24
     main: dist/index.js
 branding:
     color: purple
